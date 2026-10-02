@@ -24,7 +24,7 @@ STEP_USER_DATA_SCHEMA = vol.Schema(
         vol.Required(CONF_INPUTS, default=8): int,
         vol.Required(CONF_OUTPUTS, default=8): int,
         vol.Required(CONF_FLIP_INPUTS, default=False): bool,
-        vol.Optional(CONF_FLIP_INPUTS_BITMASK): vol.All(str, vol.Contains([0,1])),
+        vol.Required(CONF_FLIP_INPUTS_BITMASK): vol.All(str, vol.Contains([0,1])),
         vol.Required(CONF_FLIP_OUTPUTS, default=False): bool,
     }
 )
