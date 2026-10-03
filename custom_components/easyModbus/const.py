@@ -19,6 +19,7 @@ CONF_INPUTS = "Inputs number"
 CONF_OUTPUTS = "Outputs number"
 CONF_FLIP_INPUTS = "Flip inputs"
 CONF_FLIP_OUTPUTS = "Flip outputs"
+CONF_FLIP_INPUTS_BITMASK = "Bitmask: set 1 to apply input Flip; 0 to leave unchanged; has to be length of inputs number"
 
 @dataclass(frozen=True)
 class BinarySensorDefinition:
