@@ -5,7 +5,7 @@ from dataclasses import dataclass
 
 from homeassistant.const import CONF_HOST, CONF_PORT
 
-DOMAIN = "easyModbus"
+DOMAIN = "easyModbus-dev"
 
 DEFAULT_HOST = ""
 DEFAULT_PORT = 502
