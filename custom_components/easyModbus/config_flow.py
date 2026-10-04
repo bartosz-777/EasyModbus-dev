@@ -12,7 +12,7 @@ from homeassistant.core import callback
 from homeassistant.config_entries import ConfigFlow, ConfigFlowResult
 from homeassistant.data_entry_flow import FlowResult
 
-from .const import DEFAULT_HOST, DEFAULT_PORT, DOMAIN, bridgeModels, CONF_MODEL, CONF_INPUTS, CONF_OUTPUTS, CONF_FLIP_INPUTS, CONF_FLIP_OUTPUTS, CONF_FLIP_INPUTS_BITMASK
+from .const import DEFAULT_HOST, DEFAULT_PORT, DOMAIN, bridgeModels, CONF_MODEL, CONF_INPUTS, CONF_OUTPUTS, CONF_FLIP_INPUTS, CONF_FLIP_OUTPUTS, CONF_FLIP_INPUTS_MASK
 from .hub import ModbusHub, ModbusNotEnabledError
 
 _LOGGER = logging.getLogger(__name__)
@@ -24,7 +24,7 @@ STEP_USER_DATA_SCHEMA = vol.Schema(
         vol.Required(CONF_INPUTS, default=8): int,
         vol.Required(CONF_OUTPUTS, default=8): int,
         vol.Required(CONF_FLIP_INPUTS, default=False): bool,
-        vol.Required(CONF_FLIP_INPUTS_BITMASK, default=11111111): int, #vol.All(str, vol.Contains([0,1])),
+        vol.Required(CONF_FLIP_INPUTS_MASK, default=11111111): int, #vol.All(str, vol.Contains([0,1])),
         vol.Required(CONF_FLIP_OUTPUTS, default=False): bool,
     }
 )
