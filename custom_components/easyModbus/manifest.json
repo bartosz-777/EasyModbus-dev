@@ -1,6 +1,6 @@
 {
-  "domain": "easyModbus",
-  "name": "EasyModbus",
+  "domain": "easyModbus-dev",
+  "name": "EasyModbus-dev",
   "codeowners": ["@bartosz-777"],
   "config_flow": true,
   "documentation": "https://github.com/bartosz-777/EasyModbus-hacs",
